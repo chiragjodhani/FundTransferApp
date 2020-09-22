@@ -73,24 +73,6 @@ struct CardView: View {
     }
 }
 
-struct PaymentView: View {
-    public var viewSpace: Namespace.ID
-    @ObservedObject var dragDrop:UserDragDrop
-    var body: some View {
-        ZStack {
-            Rectangle().onTapGesture {
-                withAnimation {
-                    dragDrop.dragDropConfig.isDroppedOnPayment = false
-                }
-            }
-            VStack {
-                Spacer(minLength: 100)
-                RoundedRectangle(cornerRadius: 25.0).fill(Color.white).matchedGeometryEffect(id: "viewID", in: viewSpace)
-            }
-        }
-    }
-}
-
 struct MenuSelectionView: View {
     @ObservedObject var dragDrop:UserDragDrop
     public var viewSpace: Namespace.ID
@@ -290,11 +272,12 @@ struct UserView: View {
 
 struct UserViewForDrag: View {
     let user: User
+    var width: CGFloat = 60
     var body: some View {
         ZStack{
-            Circle().fill(Color.white).frame(width: 60, height: 60)
-            Image(user.imageName).resizable().frame(width: 60, height: 60).clipShape(Circle())
-        }.offset(x: user.id < 3 ? 85 : 150).rotationEffect(.degrees(Double(user.id * 100)))
+            Circle().fill(Color.white).frame(width: width, height: width)
+            Image(user.imageName).resizable().frame(width: width - 10, height: width - 10).clipShape(Circle())
+        }
     }
 }
 
@@ -336,6 +319,8 @@ extension Color {
     
     static let logoLinear = LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.3), Color.black]), startPoint: .bottomLeading, endPoint: .top)
 }
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

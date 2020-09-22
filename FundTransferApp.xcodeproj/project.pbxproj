@@ -11,6 +11,7 @@
 		C2FD833A2519C88D000719FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD83392519C88D000719FF /* ContentView.swift */; };
 		C2FD833C2519C890000719FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FD833B2519C890000719FF /* Assets.xcassets */; };
 		C2FD833F2519C890000719FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FD833E2519C890000719FF /* Preview Assets.xcassets */; };
+		C2FD8347251A0285000719FF /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8346251A0285000719FF /* PaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		C2FD833B2519C890000719FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2FD833E2519C890000719FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2FD83402519C890000719FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FD8346251A0285000719FF /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				C2FD83372519C88D000719FF /* FundTransferAppApp.swift */,
 				C2FD83392519C88D000719FF /* ContentView.swift */,
+				C2FD8346251A0285000719FF /* PaymentView.swift */,
 				C2FD833B2519C890000719FF /* Assets.xcassets */,
 				C2FD83402519C890000719FF /* Info.plist */,
 				C2FD833D2519C890000719FF /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FD833A2519C88D000719FF /* ContentView.swift in Sources */,
+				C2FD8347251A0285000719FF /* PaymentView.swift in Sources */,
 				C2FD83382519C88D000719FF /* FundTransferAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
